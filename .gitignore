@@ -1,7 +1,14 @@
-.DS_Store
-
-
 # Xcode
+.DS_Store
+xcuserdata
+*.xcuserdatad
+*.xcworkspace/contents.xcworkspacedata
+*.xcodeproj/project.xcworkspace
+*.xcodeproj/xcuserdata
+
+
+
+
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
