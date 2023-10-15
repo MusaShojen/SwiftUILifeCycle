@@ -28,7 +28,7 @@ struct NutritionInfoView: View {
             print("NutritionInfoView appeared")
         }
         .onDisappear{
-            
+            nutritionData = nil
             print("NutritionInfoView disappeared")
         }
         

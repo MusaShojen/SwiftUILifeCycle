@@ -15,7 +15,7 @@ struct NutritionView: View {
     let nutrition : String
     
     var body: some View {
-        Image(nutrition.lowercased()) // Предполагая, что у вас есть изображения с именами "apple", "pineapple", и "potato"
+        Image(nutrition.lowercased())
             .resizable()
             .frame(width: 300, height: 300)
             .clipShape(Circle())
@@ -37,7 +37,9 @@ struct NutritionView: View {
           
         }
         .onDisappear{
+            nutritionData = nil
             print("NutritionView disappeared")
+            
         }
         .onChange(of: isPresented) { oldValue, newValue in
             print("isPresented changed from \(oldValue) to \(newValue)")
