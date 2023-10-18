@@ -3,7 +3,7 @@ import Alamofire
 
 class Networking {
     
-    func createURL(_ query: String) -> URL? {
+   private func createURL(_ query: String) -> URL? {
         let baseUrl = "https://api.api-ninjas.com/v1/nutrition?query="
         if let encodedQuery = query.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) {
             let urlString = baseUrl + encodedQuery
